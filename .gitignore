@@ -1,0 +1,10 @@
+# Entornos virtuales
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Archivos de distribución o IDE
+*.egg-info/
+.vscode/
+.idea/
