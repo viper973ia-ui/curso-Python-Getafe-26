@@ -17,9 +17,12 @@ inferior al introducido.
 Despues de ejecutar cualquiera de las anteriores opciones, se muestra de nuevo el menu.
 Asi hasta que elija la opcion 5 que sale del programa
 """ 
+
+# ***** Declaración de función para COMPROBAR si el libro ya existe en la lista de libros *****
 def comprobar_libro(titulo):
     return titulo in [libro["titulo"] for libro in lista_libros]
-
+# **********************************************************************
+# **********************************************************************
 
 opcion=1
 lista_libros=[]
@@ -34,6 +37,7 @@ while opcion != 5:
         print("3.- Buscar por titulo")
         print("4.- Libros por precio maximo")
         print("5.- Salir")
+        print("=====================================")
         opcion=int(input("Elije opción (1 - 5); "))
         match opcion:
             case 1:
@@ -62,7 +66,7 @@ while opcion != 5:
                     if libro["precio"] <= precio_maximo:
                         print(f"Titulo: {libro['titulo']}, Autor: {libro['autor']}, Precio: {libro['precio']}")
             case 5:
-                print("fin del programa")
+                print("FIN del PROGRAMA")
                 salir=True
                 exit               
             case _:
