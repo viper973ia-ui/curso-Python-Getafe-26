@@ -48,7 +48,7 @@ while opcion != 5:
                 if not comprobar_libro(titulo):
                     lista_libros.append(libro)
                 else:
-                    print("El libro ya existe en la librería.") 
+                    print("❌ El libro ya existe en la librería.") 
             case 2:
                 for libro in lista_libros:
                     print(f"Titulo: {libro['titulo']}, Autor: {libro['autor']}, Precio: {libro['precio']}")
