@@ -16,8 +16,17 @@ def buscar_cancion(titulo):
     for cancion in lista_reproduccion:
         if cancion["titulo"].lower() == titulo.lower():
             return True
-    return False
+    return False     # si llega aquí es porque no ha encontrado la canción.
 # ***************************************************************************************************
+
+# Otra función CON SIMPLICACIÓN de LISTAS ***********************
+
+def comprobar_cancion(titulo):
+    return titulo in [can["titulo"] for can in lista_reproduccion]
+
+# **********************************************************************
+#              Tener en cuenta la simplicidad en una línea (OJO con la lectura del código)
+# **********************************************************************
 
 contador=0
 suma=0
