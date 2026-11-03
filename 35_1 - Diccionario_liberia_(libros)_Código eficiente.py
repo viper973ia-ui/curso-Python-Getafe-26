@@ -17,7 +17,8 @@ while True:
         opcion = int(input("Elige opción (1 - 5): "))
     except ValueError:
         continue
-
+    print("No es un valor numérico, vuelve a intentar")    
+    
     if opcion == 1:
         titulo = input("Introduce el título del libro: ")
         if titulo in lista_libros:
