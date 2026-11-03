@@ -59,7 +59,7 @@ while opcion != 5:
                         print(f"Titulo: {libro['titulo']}, Autor: {libro['autor']}, Precio: {libro['precio']}")
                         break
                 else:
-                    print("El libro no se encuentra en la librería.")
+                    print("❌El libro no se encuentra en la librería.")
             case 4:
                 precio_maximo=float(input("Introduce el precio máximo: "))
                 for libro in lista_libros:
