@@ -12,7 +12,8 @@ horario_usuario=(input("Introduce el horario de los cursos (mañana, tarde o fes
 
 # print (horario_usuario)
 
-cursos_disponibles=(list(map(lambda lb:lb["denominacion"],filter(lambda hr:hr["horario"]==horario_usuario, cursos))))
+cursos_disponibles=(list(map(lambda lb:lb["denominacion"],
+                             filter(lambda hr:hr["horario"]==horario_usuario, cursos))))
 
 
 print (cursos_disponibles)
