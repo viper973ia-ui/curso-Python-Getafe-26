@@ -19,3 +19,16 @@ print(sorted(nombres,key=lambda e:len(e)))    # imprime de menor a Mayor
 
 
 print(sorted(nombres,reverse=True,key=lambda e:len(e)))    # imprime de Mayor a menor
+
+
+# de la lista de números, imprime el mayor
+
+print(max(lista))
+
+#imprimir el menor de la lista de nombres
+
+print(min(nombres))  # Es bicicleta porque ordena de manera natural 
+                     #(de la primera letra)
+
+#imprime el que menos caracteres
+print(min(nombres,key=lambda e:len(e)))
