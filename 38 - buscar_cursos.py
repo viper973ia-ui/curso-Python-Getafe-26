@@ -23,9 +23,9 @@ for curso in cursos:
         nota_media_max=nota_media
         curso_nota_media_max=curso["denominacion"]
         
-    
+    fecha_fin_min="31/12/9999"
     fecha_fin=curso["fecha_fin"]
-    if "fecha_fin_min" not in locals() or fecha_fin<fecha_fin_min:   # (No coge la última línea que es la correcta)
+    if "fecha_fin_min" not in locals() or fecha_fin<fecha_fin_min:   
         fecha_fin_min=fecha_fin
         curso_fecha_fin_min=curso["denominacion"]
 
