@@ -23,7 +23,7 @@ def curso_antes():
             fecha_antes=f
             nombre_curso=c["denominacion"]
     
-    print(f"El curso más antiguo es {nombre_curso}")
+    return f"El curso más antiguo es {nombre_curso}"
     
 def curso_media_mayor():
     nombre_curso=""
@@ -35,8 +35,8 @@ def curso_media_mayor():
             media_alta=m
             nombre_curso=c["denominacion"]
     
-    print(f"El curso con la media más alta es {nombre_curso}")
+    return f"El curso con la media más alta es {nombre_curso}"
     
 #llamadas a las funciones
-curso_antes()
-curso_media_mayor() 
+st.write(curso_antes())
+st.write(curso_media_mayor())
